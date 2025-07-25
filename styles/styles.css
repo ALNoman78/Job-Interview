@@ -30,3 +30,9 @@ body {
 .bg-shaper {
     clip-path: polygon(33% 0, 100% 0%, 68% 100%, 0% 100%);
 }
+
+@media screen and (max-width: 576px){
+    #background-image{
+        /* display: none; */
+    }
+}
