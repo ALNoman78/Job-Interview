@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Interview</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css" class="rel">
+</head>
+
+<body>
+    <!-- navbar styles start -->
+    <div class="navbar md:px-[154px] md:py-9 static">
+        <div class="navbar-start md:w-full">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 shadow">
+                    <li><a>Fix and Flip</a></li>
+                    <li><a href="#">Rental Loans</a>
+                    <li><a href="#">Where We Lend</a>
+                    <li><a href="#">About Us</a>
+                    <li><a href="#">Resources</a>
+                    <li><a href="#">Get Approved Online</a></li>
+                </ul>
+            </div>
+            <a class="text-xl">
+                <img src="./assest/Ridge Street.png" alt="">
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex ">
+            <ul class="menu menu-horizontal px-1 text-xl font-medium text-[#343434] gap-8">
+                <li><a>Fix and Flip</a></li>
+                <li><a href="#">Rental Loans</a>
+                <li><a href="#">Where We Lend</a>
+                <li><a href="#">About Us</a>
+                <li><a href="#">Resources</a>
+            </ul>
+        </div>
+        <button href="#"
+            class="bg-[#165831] py-5 px-8 btn text-white bold  hidden md:flex uppercase font-semibold text-[18px] rounded-lg">Get
+            Approved Online</button>
+    </div>
+    <!-- navbar styles end -->
+    <!-- hero section start -->
+    <section id="background-image"
+        class="flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-r from-white to-gray-100 margin-class">
+        <!-- Left Content -->
+        <div
+            class="md:pl-[154px] md:py-[149px] text-center md:text-left bg-gradient-to-l from-[#ffffffbf] via-[#ffffff99] to-[#ffffff] backdrop-blur-md backdrop-brightness-75 w-full">
+            <div class="flex justify-between">
+                <div class="pt-[300px]">
+                    <h1 class="md:text-6xl text-gradient-to-l from-[#165831cc] to-[#165831] text-[#165831] font-bold">
+                        FLORIDA AND TEXAS <br />
+                        HARD MONEY LENDERS
+                    </h1>
+                    <p class="text-[#343434] mt-4 md:text-[32px] font-semibold">
+                        Fast Closing Fix and Flip and Rental Loans <br />
+                        For Your Investment Properties.
+                    </p>
+
+                    <button class="btn mt-6 px-6 md:py-[26px] text-color text-white font-semibold shadow-md">
+                        GET APPROVED ONLINE
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- end -->
+                <!-- Right Image -->
+                <div class="mb-10 md:mb-0 relative flex items-center justify-center">
+                    <div class="flex gap-4">
+                        <div style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); "
+                            class="w-[590px] h-[702px] rounded-xl">
+                            <img style="object-fit: none; object-position: 63% 57%;" class="w-full h-full rounded-xl"
+                                src="./assest/Frame 3.png" />
+                        </div>
+                        <div style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)"
+                            class="w-[371px] h-[383px] rounded-xl mt-[300px]">
+                            <img style="object-fit: none; object-position: 83% 63%;" src="./assest/Frame 3.png"
+                                alt="House" class="w-full h-full rounded-xl" />
+                        </div>
+                    </div>
+                </div>
+                <!-- emd -->
+            </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- greetings section start -->
+    <section class="flex justify-center flex-col">
+        <div class="md:my-20">
+            <h3 class="text-[#165831] text-[56px] font-extrabold uppercase text-center ">Loan Products</h3>
+        </div>
+        <div>
+            <div class="px-[154px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Fix and Flip Card -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200 relative overflow-hidden">
+                        <!-- Clipped Background Layer -->
+                        <div class="absolute inset-0 bg-[#165831] text-[#165831]"></div>
+
+                        <!-- Actual Content on Top of Background -->
+                        <div class="relative z-10 p-6 text-white">
+                            <div class="flex flex-col gap-5 justify-center items-center">
+                                <div class="mt-10">
+                                    <img src="./assest/Frame 69.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="text-[32px] font-semibold text-center mb-1">Rental Property</h3>
+                                    <p class="text-[16px] font-medium mb-5">30 Year DSCR loans in Florida and Texas</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3 mb-6">
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-white.png" alt="">
+                                    <p><span>Up to $1,500,000</span></p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-white.png" alt="">
+                                    <p>Interest Rate 6.75%-8.25%</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-white.png" alt="">
+                                    <p><span>Origination Fee From 1.5%0</span></p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-white.png" alt="">
+                                    <p>Up to 85% of LTV</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col space-y-4">
+                                <div class="flex items-center gap-2 mb-5">
+                                    <img src="./assest/information-circle.png" alt="">
+                                    <a href="#" class="transition-colors underline">Learn More</a>
+                                </div>
+                                <button
+                                    class="bg-white mb-5 text-[#165831] font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-200 w-full">
+                                    GET APPROVED ONLINE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rental Property Card -->
+                    <div class="bg-[#165831] rounded-2xl shadow-lg border border-gray-200 relative overflow-hidden">
+                        <!-- Clipped Background Layer -->
+                        <div class="absolute inset-0 bg-white text-[#165831] z-0 clip-card-shape"></div>
+
+                        <!-- Actual Content on Top of Background -->
+                        <div class="relative z-10 p-6 text-[#165831]">
+                            <div class="flex flex-col gap-5 justify-center items-center">
+                                <div class="mt-10">
+                                    <img src="./assest/Frame 69 (1).png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="text-[32px] font-semibold text-center mb-1">Rental Property</h3>
+                                    <p class="text-[16px] font-medium mb-5">30 Year DSCR loans in Florida and Texas</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3 mb-6">
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p><span>Up to $1,500,000</span></p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p>Interest Rate 6.75%-8.25%</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p><span>Origination Fee From 1.5%0</span></p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p>Up to 85% of LTV</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col space-y-4">
+                                <div class="flex items-center gap-2 mb-5">
+                                    <img src="./assest/information-circle (1).png" alt="">
+                                    <a href="#" class="transition-colors underline">Learn More</a>
+                                </div>
+                                <button
+                                    class="text-white mb-5 bg-[#165831] font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-200 w-full">
+                                    GET APPROVED ONLINE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ground Up Construction Card -->
+                    <div class="bg-[#165831] rounded-2xl shadow-lg border border-gray-200 relative overflow-hidden">
+                        <!-- Clipped Background Layer -->
+                        <div class="absolute inset-0 bg-white text-[#165831] z-0 clip-card-shape"></div>
+                        <!-- Actual Content on Top of Background -->
+                        <div class="relative z-10 p-6 text-[#165831]">
+                            <div class="flex flex-col gap-5 justify-center items-center">
+                                <div class="mt-10">
+                                    <img src="./assest/Frame 69 (2).png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="text-[32px] font-semibold text-center mb-1">Fix and Flip</h3>
+                                    <p class="text-[16px] font-medium mb-5">Funding For Rehab + Purchase</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3 mb-6">
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p><span>Up to $3,500,000</span></p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p>Interest Rate 11.25%-13.25%</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p><span>Origination Fee From 1.5%</span></p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./assest/checkmark-circle-03 (1).png" alt="">
+                                    <p>Up to 80% of LTC</span></p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col space-y-4">
+                                <div class="flex items-center gap-2 mb-5">
+                                    <img src="./assest/information-circle (1).png" alt="">
+                                    <a href="#" class="transition-colors underline">Learn More</a>
+                                </div>
+                                <button
+                                    class="text-white mb-5 bg-[#165831] font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-200 w-full">
+                                    GET APPROVED ONLINE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- greetings section end -->
+    <!-- map section start -->
+    <section class="bg-gradient-to-t from-[#165831] via-[#499668] to-[#165831] text-white md:my-32">
+        <div class="md:px-[154px] md:pt-[120px]">
+            <h3 class="font-extrabold text-[56px] text-white uppercase">Where We Lend</h3>
+            <p class="md:w-[55%] md:text-2xl">Ridge Street provides hard money loans to real estate investors in 35
+                states.
+                We focus our efforts in <span class="font-bold">Texas</span> and <span class="font-bold">Florida</span>.
+            </p>
+        </div>
+        <div class="md:flex flex-col justify-center items-center md:mt-20 md:gap-20">
+            <div>
+                <img src="./assest/Frame 39480.png" alt="">
+            </div>
+            <div class="md:flex md:gap-[200px]">
+                <img src="./assest/Frame 21.png" alt="">
+                <img src="./assest/Frame 21 (1).png" alt="">
+            </div>
+            <div class="md:mb-[120px]">
+                <button
+                    class="bg-white md:w-[22rem]  mb-5 text-[#165831] uppercase font-semibold md:py-7 md:text-2xl md:px-6 rounded-lg shadow-md transition-colors duration-200">
+                    View All Locations
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- map section end -->
+    <!-- brand details start-->
+    <section class="bg-white text-center">
+        <!-- Section Title -->
+        <h2 class="text-[32px] md:text-[56px] font-extrabold tracking-wide text-[#165831] mb-12">
+            <span class="b-4">WHY CHOOSE US</span>
+        </h2>
+
+        <!-- 3 Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-[156px] mb-10">
+            <!-- Card 1 -->
+            <div class="border border-gray-300 md:pt-[46px] flex flex-col justify-between text-left rounded-lg">
+                <div class="md:px-10">
+                    <h3 class="text-3xl font-bold  mb-2">Simple Online Application</h3>
+                    <p class="md:text-lg md:my-5 text-[#343434]">
+                        Easy 2 minute online application, with no credit pull required.
+                    </p>
+                </div>
+                <div class="mt-6 md:w-[164px] md:h-[151px] bg-shaper bg-[#EEFFF5] flex justify-center items-center">
+                    <img src="./assest/time.png" alt="Simple Application" class="w-auto h-auto p-2 rounded" />
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="border border-gray-300 md:pt-[46px] flex flex-col justify-between text-left rounded-lg">
+                <div class=" md:px-10">
+                    <h3 class="text-3xl font-bold  mb-2">Quick Turn Around</h3>
+                    <p class="md:text-lg md:my-5 text-[#343434]">
+                        Receive a Term Sheet within the hour.
+                    </p>
+                </div>
+                <div class="mt-6 md:w-[164px] md:h-[151px] bg-shaper bg-[#EEFFF5] flex justify-center items-center">
+                    <img src="./assest/simple.png" alt="Simple Application" class="w-auto h-auto  p-2 rounded" />
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="border border-gray-300 flex md:pt-[46px] flex-col justify-between text-left rounded-lg">
+                <div class=" md:px-10">
+                    <h3 class="text-3xl font-bold  mb-2">Simple Online Application</h3>
+                    <p class="md:text-lg md:my-5 text-[#343434]">
+                        Easy 2 minute online application, with no credit pull required.
+                    </p>
+                </div>
+                <div class="mt-6 md:w-[164px] bg-shaper md:h-[151px] bg-[#EEFFF5] flex justify-center items-center">
+                    <img src="./assest/secquer.png" alt="Simple Application" class="w-auto h-auto p-2 rounded" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="flex justify-center">
+            <button
+                class="bg-[#165831] text-white font-bold py-3 px-6 rounded-lg shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
+                MORE ABOUT US
+            </button>
+        </div>
+    </section>
+    <!-- brand details end-->
+
+    <!-- review section start -->
+    <!-- <section>
+        <div>
+            <h3
+                class="text-[32px] md:text-[56px] font-extrabold tracking-wide text-center md:my-[120px] text-[#165831] mb-12">
+                Ridge Street Client Reviews</h3>
+        </div>
+        <div class="bg-[#165831]">
+            <div class="grid grid-cols-4 md:gap-10 md:px-[154px]">
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px]mt-20 mx-auto">
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px]mt-20 mx-auto">
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px]mt-20 mx-auto">
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px]mt-20 mx-auto">
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- bg-[#165831] -->
+    <section class="py-16 bg-white ">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#165831] md:mb-[300px] md:my-[120px]">
+            RIDGE STREET CLIENT REVIEWS
+        </h2>
+
+        <div class="relative bg-[#165831] md:h-[408px] border border-red-500 border-solid py-12 px-4">
+            <!-- Review Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-4 absolute -top-48 md:px-[156px] gap-6">
+                <!-- Card -->
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px] mt-20 mx-auto">
+                        <!-- Card container -->
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <!-- Avatar -->
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+
+                            <!-- Content -->
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px] mt-20 mx-auto">
+                        <!-- Card container -->
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <!-- Avatar -->
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+
+                            <!-- Content -->
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px] mt-20 mx-auto">
+                        <!-- Card container -->
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <!-- Avatar -->
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+
+                            <!-- Content -->
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" swiper-slide">
+                    <div class="relative md:w-[325px] mt-20 mx-auto">
+                        <!-- Card container -->
+                        <div
+                            class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
+                            <!-- Avatar -->
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                            </div>
+
+                            <!-- Content -->
+                            <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                            <p class="text-lg text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                            <p class="text-gray-600 text-sm text-left text-pretty">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue,
+                                a
+                                accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel
+                                ante
+                                vel ex cursus.
+                            </p>
+                        </div>
+
+                        <!-- Green background base -->
+                        <!-- <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-green-800 rounded-b-2xl "></div> -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- review section end -->
+
+</body>
+
+</html>
