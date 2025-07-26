@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Interview</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- npm -->
+    <link rel="stylesheet" href="./css/style.css" class="rel">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
@@ -41,7 +41,7 @@
                     <li><a href="#">Get Approved Online</a></li>
                 </ul>
             </div>
-            <a class="text-xl">
+            <a class="w-full">
                 <img src="./assest/Ridge.png" alt="">
             </a>
         </div>
@@ -60,47 +60,36 @@
     </div>
     <!-- navbar styles end -->
     <!-- hero section start -->
-    <section id="background-image"
-        class="flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-r from-white to-gray-100 margin-class">
+    <section
+        style="background-image: url(./assest/Frame\ 7.png); background-position: right; background-size: cover; background-repeat: no-repeat;"
+        class="">
         <!-- Left Content -->
-        <div
-            class="md:pl-[154px] md:py-[149px] text-center md:text-left bg-gradient-to-l from-[#ffffffbf] via-[#ffffff99] to-[#ffffff] backdrop-blur-md backdrop-brightness-75 w-full">
-            <div class="flex justify-between">
-                <div class="pt-[300px]">
-                    <h1 class="md:text-6xl text-gradient-to-l from-[#165831cc] to-[#165831] text-[#165831] font-bold">
+        <div class="md:pl-[154px] md:py-[149px] text-center  md:text-left">
+            <div class=" md:bg-transparent bg-white/60">
+                <div class="md:py-[300px] py-32">
+                    <h1
+                        class="md:text-6xl text-2xl md:text-gradient-to-l from-[#165831cc] to-[#165831] text-[#165831] font-extrabold">
                         FLORIDA AND TEXAS <br />
                         HARD MONEY LENDERS
                     </h1>
-                    <p class="text-[#343434] mt-4 md:text-[32px] font-semibold">
+                    <p class="text-[#343434] mt-5 mb-14.5 md:text-[32px] font-semibold">
                         Fast Closing Fix and Flip and Rental Loans <br />
                         For Your Investment Properties.
                     </p>
+                    <!-- main button -->
+                    <div class="flex md:mb-4 md:pl-0 pl-8">
+                        <button
+                            class="bg-[#165831] py-3 text-white rounded-tl-xl rounded-bl-xl md:px-14 px-10 md:py-[14px] md:text-2xl font-medium relative">
+                            Get Approved Online
+                            <span
+                                class="absolute border-x-[3px] border-x-[#165831] border-y-[4px] border-solid border-y-[#165831] bg-white left-[90%] top-0 w-[50px] h-[46px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                                <i class="fa-solid fa-angles-right text-[#165831] font-bold"></i>
+                            </span>
+                        </button>
+                    </div>
 
-                    <button class="btn mt-6 px-6 md:py-[26px] text-color text-white font-semibold shadow-md">
-                        GET APPROVED ONLINE
-                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
                 </div>
                 <!-- end -->
-                <!-- Right Image -->
-                <div class="mb-10 md:mb-0 relative flex items-center justify-center">
-                    <div class="flex gap-4">
-                        <div style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); "
-                            class="lg:w-[590px] md:h-[702px]  rounded-xl">
-                            <img style="object-fit: none; object-position: 63% 57%;" class="w-full h-full md:block hidden rounded-xl"
-                                src="./assest/Frame 3.png" />
-                        </div>
-                        <div style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)"
-                            class="w-[371px] h-[383px] rounded-xl mt-[300px]">
-                            <img style="object-fit: none; object-position: 83% 63%;" src="./assest/Frame 3.png"
-                                alt="House" class="w-full h-full rounded-xl" />
-                        </div>
-                    </div>
-                </div>
-                <!-- emd -->
             </div>
     </section>
     <!-- hero section end -->
@@ -108,7 +97,8 @@
     <!-- greetings section start -->
     <section class="flex justify-center flex-col">
         <div class="md:my-20">
-            <h3 class="text-[#165831] md:text-[56px] text-xl my-6 font-extrabold uppercase text-center ">Loan Products</h3>
+            <h3 class="text-[#165831] md:text-[56px] text-xl my-6 font-extrabold uppercase text-center ">Loan Products
+            </h3>
         </div>
         <div>
             <div class="md:px-[154px] mx-auto">
@@ -153,10 +143,17 @@
                                     <img src="./assest/information-circle.png" alt="">
                                     <a href="#" class="transition-colors underline">Learn More</a>
                                 </div>
-                                <button
-                                    class="bg-white mb-5 text-[#165831] font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-200 w-full">
-                                    GET APPROVED ONLINE
-                                </button>
+                                <!-- main button -->
+                                <div class="flex md:mb-4">
+                                    <button
+                                        class="text-[#165831] rounded-tl-xl rounded-bl-xl bg-white md:px-14 px-10 py-[14px] md:text-2xl font-medium relative">
+                                        Get Approved Online
+                                        <span
+                                            class="absolute border-x-[3px] border-x-white border-y-[4px] border-solid border-y-white bg-[#165831] left-[90%] top-0 w-[50px] h-[46px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                                            <i class="fa-solid fa-angles-right text-white font-bold"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,10 +197,17 @@
                                     <img src="./assest/information-circle (1).png" alt="">
                                     <a href="#" class="transition-colors underline">Learn More</a>
                                 </div>
-                                <button
-                                    class="text-white mb-5 bg-[#165831] font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-200 w-full">
-                                    GET APPROVED ONLINE
-                                </button>
+                                <!-- main button -->
+                                <div class="flex md:mb-4">
+                                    <button
+                                        class="bg-[#165831] py-3 text-white rounded-tl-xl rounded-bl-xl md:px-14 px-10 md:py-[14px] md:text-2xl font-medium relative">
+                                        Get Approved Online
+                                        <span
+                                            class="absolute border-x-[3px] border-x-[#165831] border-y-[4px] border-solid border-y-[#165831] bg-white left-[90%] top-0 w-[50px] h-[46px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                                            <i class="fa-solid fa-angles-right text-[#165831] font-bold"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -247,10 +251,16 @@
                                     <img src="./assest/information-circle (1).png" alt="">
                                     <a href="#" class="transition-colors underline">Learn More</a>
                                 </div>
-                                <button
-                                    class="text-white mb-5 bg-[#165831] font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-200 w-full">
-                                    GET APPROVED ONLINE
-                                </button>
+                                <div class="flex md:mb-4">
+                                    <button
+                                        class="bg-[#165831] py-3 text-white rounded-tl-xl rounded-bl-xl md:px-14 px-10 md:py-[14px] md:text-2xl font-medium relative">
+                                        Get Approved Online
+                                        <span
+                                            class="absolute border-x-[3px] border-x-[#165831] border-y-[4px] border-solid border-y-[#165831] bg-white left-[90%] top-0 w-[50px] h-[46px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                                            <i class="fa-solid fa-angles-right text-[#165831] font-bold"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -278,11 +288,17 @@
                 <img class="w-full" src="./assest/Frame 21.png" alt="">
                 <img src="./assest/Frame 21 (1).png" alt="">
             </div>
-            <div class="md:mb-[120px]">
-                <button
-                    class="bg-white md:w-[22rem]  mb-5 text-[#165831] uppercase font-semibold md:py-7 md:text-2xl md:px-6 rounded-lg shadow-md transition-colors duration-200">
-                    View All Locations
-                </button>
+            <div class="flex justify-center md:mb-[120px]">
+                <div class="flex md:my-4 my-10">
+                    <button
+                        class="text-[#165831] rounded-tl-xl rounded-bl-xl bg-white md:px-14 px-10 py-[14px] md:text-2xl font-medium relative">
+                        Get Approved Online
+                        <span
+                            class="absolute border-x-[3px] border-x-white border-y-[4px] border-solid border-y-white bg-[#165831] left-[90%] top-0 w-[50px] h-[47px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                            <i class="fa-solid fa-angles-right text-white font-bold"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -337,10 +353,14 @@
         </div>
 
         <!-- Button -->
-        <div class="flex justify-center">
+        <div class="md:mt-14 my-12 md:my-0">
             <button
-                class="bg-[#165831] text-white font-bold py-3 px-6 rounded-lg shadow-md flex items-center gap-2 hover:scale-105 transition-transform">
-                MORE ABOUT US
+                class="bg-[#165831] py-3 text-white rounded-tl-xl rounded-bl-xl md:px-14 px-10 md:py-[14px] md:text-2xl font-medium relative">
+                More About Us
+                <span
+                    class="absolute border-x-[3px] border-x-[#165831] border-y-[4px] border-solid border-y-[#165831] bg-white left-[90%] top-0 w-[50px] h-[46px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                    <i class="fa-solid fa-angles-right text-[#165831] font-bold"></i>
+                </span>
             </button>
         </div>
     </section>
@@ -363,13 +383,18 @@
                             <div
                                 class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
                                 <!-- Avatar -->
-                                <div class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
-                                    <img src="./assest/Ellipse 1.png" alt="Avatar" class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                    <img src="./assest/Ellipse 1.png" alt="Avatar"
+                                        class="md:w-full w-[86%] h-auto object-cover">
                                 </div>
 
                                 <!-- Content -->
-                                <h3 class="text-[#165831] text-2xl md:pt-[90px]">Name Here</h3>
-                                <p class="md:text-lg hidden lg:blcok text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                                <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
+                                <p
+                                    class="md:text-lg hidden lg:flex justify-center text-[#165831] font-medium mt-1 mb-3">
+                                    What an
+                                    amazing experience</p>
                                 <p class="md:text-gray-600  text-white/70 text-sm text-left text-pretty">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis
                                     congue,
@@ -390,13 +415,16 @@
                             <div
                                 class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
                                 <!-- Avatar -->
-                                <div class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
-                                    <img src="./assest/Ellipse 1 (1).png" alt="Avatar" class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                    <img src="./assest/Ellipse 1 (1).png" alt="Avatar"
+                                        class="md:w-full w-[86%] h-auto object-cover">
                                 </div>
 
                                 <!-- Content -->
                                 <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
-                                <p class="text-lg hidden md:block text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                                <p class="text-lg hidden md:block text-[#165831] font-medium mt-1 mb-3">What an amazing
+                                    experience</p>
                                 <p class="md:text-gray-600  text-white/70 text-sm text-left text-pretty">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis
                                     congue,
@@ -418,13 +446,16 @@
                             <div
                                 class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
                                 <!-- Avatar -->
-                                <div class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
-                                    <img src="./assest/Ellipse 1 (2).png" alt="Avatar" class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                    <img src="./assest/Ellipse 1 (2).png" alt="Avatar"
+                                        class="md:w-full w-[86%] h-auto object-cover">
                                 </div>
 
                                 <!-- Content -->
                                 <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
-                                <p class="text-lg hidden lg:block text-[#165831] font-medium mt-1 mb-3">What an amazing experience</p>
+                                <p class="text-lg hidden lg:block text-[#165831] font-medium mt-1 mb-3">What an amazing
+                                    experience</p>
                                 <p class="md:text-gray-600  text-white/70 text-sm text-left text-pretty">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis
                                     congue,
@@ -445,13 +476,16 @@
                             <div
                                 class="rounded-[40px] bg-white/50 backdrop-blur-md border drop-shadow-xl pt-8 pb-6 px-5 text-center relative z-10">
                                 <!-- Avatar -->
-                                <div class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
-                                    <img src="./assest/Ellipse 1 (3).png" alt="Avatar" class="w-full h-auto object-cover">
+                                <div
+                                    class="absolute md:-top-12 -top-[30%] left-1/2 transform -translate-x-1/2 z-20 mb-5">
+                                    <img src="./assest/Ellipse 1 (3).png" alt="Avatar"
+                                        class="md:w-full w-[86%] h-auto object-cover">
                                 </div>
 
                                 <!-- Content -->
                                 <h3 class="text-[#165831] font-bold text-2xl md:pt-[90px]">Name Here</h3>
-                                <p class="text-lg text-[#165831] hidden lg:block font-medium mt-1 mb-3">What an amazing experience</p>
+                                <p class="text-lg text-[#165831] hidden lg:block font-medium mt-1 mb-3">What an amazing
+                                    experience</p>
                                 <p class="md:text-gray-600 text-white/70 text-sm text-left text-pretty">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis
                                     congue,
@@ -470,13 +504,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <button
-                        class="bg-white md:w-[22rem] w-full md:my-12 my-6 py-4 text-[#165831] uppercase font-semibold md:py-7 md:text-2xl md:px-6 rounded-lg shadow-md transition-colors duration-200">
-                        View All Locations
-                    </button>
+                <div class="flex justify-center md:mt-14">
+                    <div class="flex md:my-0 my-12">
+                        <button
+                            class="text-[#165831] rounded-tl-xl rounded-bl-xl bg-white md:px-14 px-10 py-[14px] md:text-2xl font-medium relative">
+                            Get Approved Online
+                            <span
+                                class="absolute border-x-[3px] border-x-white border-y-[4px] border-solid border-y-white bg-[#165831] left-[90%] top-0 w-[50px] h-[46px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                                <i class="fa-solid fa-angles-right text-white font-bold"></i>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- review section end -->
@@ -504,7 +545,7 @@
                         <!-- <div class="badge badge-success w-fit mb-2">For Sale</div> -->
 
                         <!-- Title and Location -->
-                        <h2 class="md:text-2xl text-center text-[#165831] font-semibold">
+                        <h2 class="md:text-2xl text-lg text-center text-[#165831] font-semibold">
                             4321 Alton Rd, Miami Beach
                         </h2>
                         <div class="text-sm text-[#343434] justify-center items-center flex gap-4 mb-2 text-center">
@@ -560,7 +601,7 @@
                         <!-- <div class="badge badge-success w-fit mb-2">For Sale</div> -->
 
                         <!-- Title and Location -->
-                        <h2 class="text-2xl text-center text-[#165831] font-semibold">
+                        <h2 class="md:text-2xl text-lg text-center text-[#165831] font-semibold">
                             4321 Alton Rd, Miami Beach
                         </h2>
                         <div class="text-sm text-[#343434] justify-center items-center flex gap-4 mb-2 text-center">
@@ -616,7 +657,7 @@
                         <!-- <div class="badge badge-success w-fit mb-2">For Sale</div> -->
 
                         <!-- Title and Location -->
-                        <h2 class="text-2xl text-center text-[#165831] font-semibold">
+                        <h2 class="md:text-2xl text-lg text-center text-[#165831] font-semibold">
                             4321 Alton Rd, Miami Beach
                         </h2>
                         <div class="text-sm text-[#343434] justify-center items-center flex gap-4 mb-2 text-center">
@@ -668,10 +709,14 @@
             </div>
         </div>
 
-        <div class="flex justify-center mt-10">
-            <button class="btn btn-outline text-white border-white hover:bg-white hover:text-green-900">
-                GET TERMS FOR YOUR PROJECT
-                <span class="ml-2">➤</span>
+        <div class="flex justify-center my-6">
+            <button
+                class="text-[#165831] lg:flex rounded-tl-xl rounded-bl-xl bg-white md:px-14 px-10 py-[14px] md:text-2xl font-medium relative">
+                Get Terms <span class="md:block hidden">For Your Project</span>
+                <span
+                    class="absolute border-x-[3px] border-x-white border-y-[4px] border-solid border-y-white bg-[#165831] left-[90%] top-0 w-[50px] h-[47px] md:py-6.5 flex justify-center items-center transform -skew-x-[20deg] rounded-lg">
+                    <i class="fa-solid fa-angles-right text-white font-bold"></i>
+                </span>
             </button>
         </div>
     </section>
@@ -680,11 +725,13 @@
     <!-- work with us section start -->
     <section class="bg-white text-center">
         <!-- Section Title -->
-        <div class="md:mt-[120px] md:mb-12 md:p-0 p-4">
-            <h2 class="md:text-[56px] text-2xl md:text-center text-left  font-extrabold tracking-wide text-[#165831] uppercase">
+        <div class="md:mt-[120px] my-8 md:my-0 md:mb-12 md:p-0 p-4">
+            <h2
+                class="md:text-[56px] text-2xl md:text-center text-left  font-extrabold tracking-wide text-[#165831] uppercase">
                 Interested In Working With Us?
             </h2>
-            <p class="text-[#343434] md:text-center text-left md:text-2xl font-semibold">We work with real estate investors across the
+            <p class="text-[#343434] md:text-center text-left md:text-2xl font-semibold">We work with real estate
+                investors across the
                 country every day. How
                 can we help?</p>
         </div>
@@ -748,6 +795,7 @@
                     <p class="md:text-lg md:my-5 text-[#343434]">
                         I’d like to schedule a call.
                     </p>
+                    </div>
                     <button
                         class="flex items-center gap-2 border border-green-800 text-green-800 px-6 py-2 rounded-xl md:py-5 md:px-8 font-semibold hover:bg-green-800 hover:text-white transition mb-5">
                         Find a home
@@ -767,7 +815,8 @@
     <!-- resource section start -->
     <section class="md:mx-[156px] md:my-20">
         <div class="md:flex justify-between items-center md:mb-10 mb-4">
-            <h3 class="text-2xl md:text-[56px] md:p-0 p-4 font-extrabold tracking-wide text-[#165831] uppercase md:w-[40%]">
+            <h3
+                class="text-2xl md:text-[56px] md:p-0 p-4 font-extrabold tracking-wide text-[#165831] uppercase md:w-[40%]">
                 Other Resources You’ll Like</h3>
             <button class="rounded-full bg-[#165831] md:py-5 px-10 hidden md:flex text-lg text-white">View More</button>
         </div>
@@ -779,7 +828,8 @@
                 </figure>
                 <div class="card-body">
                     <span class="italic text-gray-500">May 9, 2024</span>
-                    <h2 class="card-title text-[#165831] md:text-[28px] text-xl">Investor’s Guide To Real Estate Wholetailing</h2>
+                    <h2 class="card-title text-[#165831] md:text-[28px] text-xl">Investor’s Guide To Real Estate
+                        Wholetailing</h2>
                     <p class="text-[#343434] md:text-lg">Real estate wholetailing investment technique that combines the
                         best aspects of two of the most common strategies - flipping houses and wholesaling. With
                         wholetailing, you can earn large.</p>
@@ -791,7 +841,8 @@
                 </figure>
                 <div class="card-body">
                     <span class="italic text-gray-500">May 9, 2024</span>
-                    <h2 class="card-title text-[#165831] md:text-[28px] text-xl">Investor’s Guide To Real Estate Wholetailing</h2>
+                    <h2 class="card-title text-[#165831] md:text-[28px] text-xl">Investor’s Guide To Real Estate
+                        Wholetailing</h2>
                     <p class="text-[#343434] md:text-lg">Real estate wholetailing investment technique that combines the
                         best aspects of two of the most common strategies - flipping houses and wholesaling. With
                         wholetailing, you can earn large.</p>
@@ -803,7 +854,8 @@
                 </figure>
                 <div class="card-body">
                     <span class="italic text-gray-500">May 9, 2024</span>
-                    <h2 class="card-title text-[#165831] md:text-[28px]">Investor’s Guide To Real Estate Wholetailing</h2>
+                    <h2 class="card-title text-[#165831] md:text-[28px]">Investor’s Guide To Real Estate Wholetailing
+                    </h2>
                     <p class="text-[#343434] md:text-lg">Real estate wholetailing investment technique that combines the
                         best aspects of two of the most common strategies - flipping houses and wholesaling. With
                         wholetailing, you can earn large.</p>
@@ -812,6 +864,35 @@
         </div>
     </section>
     <!-- resource section end -->
+
+
+    <!-- ser -->
+
+
+    <section
+        style="background-image: url('./assest/Frame\ 8.png'); background-position: right; background-size: cover;background-repeat: no-repeat ;"
+        class="bg-white md:-[256px] ">
+        <!-- Left Text Content -->
+        <div class="max-w-2xl md:mx-[156px] md:py-[185px] md:p-0 p-4 md:bg-transparent bg-white/60">
+            <h2 class="text-2xl md:text-[56px] font-extrabold tracking-wide text-[#165831] uppercase">READY
+                TO GET STARTED</h2>
+            <p class="text-gray-700 md:text-2xl font-medium text-wrap ">
+                With Ridge Street, obtaining a private mortgage loan is easier than you think! You can get pre-approved
+                online and a Term Sheet that Meet’s your needs will be sent to you within the hour.
+            </p>
+            <div class="md:mt-14 my-12 md:my-0">
+                <button
+                    class="bg-[#165831] rounded-tl-xl rounded-bl-xl text-white md:px-10 md:py-[25px] py-3 px-4 md:text-2xl font-semibold relative">
+                    Get Approved Online
+                    <span
+                        class="absolute border-x-[3px] border-x-[#165831] border-y-[4px] border-solid border-y-[#165831] bg-white left-[90%] top-0 md:w-[76px] w-[50px] h-[46px] md:h-auto md:py-6.5 flex justify-center items-center transform -skew-x-[30deg] rounded-lg">
+                        <i class="fa-solid fa-angles-right text-[#165831] font-bold"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- footer section -->
     <footer
         class="footer sm:footer-horizontal bg-base-200 md:px-[156px] text-base-content bg-[#165831] text-white p-10">

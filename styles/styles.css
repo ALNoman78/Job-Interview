@@ -8,21 +8,6 @@ body {
     background-color: hsl(145, 60%, 22%);
 }
 
-/* section {
-    margin-top: 120px;
-} */
-
-.margin-class {
-    margin-top: 0;
-}
-
-#background-image {
-    background-image: url('./assest/Frame\ 3.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-origin: border-box;
-}
-
 .clip-card-shape {
     clip-path: polygon(0 8%, 89% 0%, 652% -8%, 106% 94%, 31% 100%, 13% 100%, 2% 100%, 0% 100%, 0 33%);
 }
@@ -31,8 +16,8 @@ body {
     clip-path: polygon(33% 0, 100% 0%, 68% 100%, 0% 100%);
 }
 
-@media screen and (max-width: 576px){
+
+/* @media screen and (max-width: 576px){
     #background-image{
-        /* display: none; */
     }
-}
+} */
